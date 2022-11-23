@@ -1,5 +1,5 @@
-const wrapper = document.getElementById("tiles");
 import anime from './node_modules/animejs/lib/anime.es.js';
+const wrapper = document.getElementById("tiles");
 
 let columns = 0,
     rows = 0,
