@@ -1,4 +1,5 @@
 const wrapper = document.getElementById("tiles");
+const anime = require('animejs');
 
 let columns = 0,
     rows = 0,
