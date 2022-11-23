@@ -46,3 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root {
+    --c1: #E27D60;
+    --c2: #85DCB0;
+	--c3: #E8A87C;
+	--c4: #C38D93;
+	--c5: #41B3A3;
+  }
