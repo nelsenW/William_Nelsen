@@ -11,7 +11,7 @@
   body {
     animation: background-pan 10s linear infinite;
     background: linear-gradient(
-      45deg,
+      90deg,
       var(--c1),
       var(--c2),
       var(--c3),
@@ -36,8 +36,8 @@
     z-index: 2;
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
   }
   
   .tile {

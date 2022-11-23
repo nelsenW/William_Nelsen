@@ -42,20 +42,17 @@ const createTiles = quantity => {
   });
 }
 
-// const createGrid = () => {
-//   wrapper.innerHTML = "";
+const createGrid = () => {
+  wrapper.innerHTML = "";
   
-//   const size = document.body.clientWidth > 800 ? 100 : 50;
+  const size = document.body.clientWidth > 800 ? 60 : 30;
   
-//   columns = Math.floor(document.body.clientWidth / size);
-//   rows = Math.floor(document.body.clientHeight / size);
+  columns = Math.floor(document.body.clientWidth / size);
+  rows = Math.floor(document.body.clientHeight / size);
   
-//   wrapper.style.setProperty("--columns", columns);
-//   wrapper.style.setProperty("--rows", rows);
-  
-//   createTiles(columns * rows);
-// }
+  createTiles(columns * rows);
+}
 
-// createGrid();
+createGrid();
 
-// window.onresize = () => createGrid();
+window.onresize = () => createGrid();

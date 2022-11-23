@@ -1,5 +1,24 @@
 {
   "dependencies": {
     "animejs": "^3.2.1"
-  }
+  },
+  "name": "william_nelsen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsenW/William_Nelsen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsenW/William_Nelsen/issues"
+  },
+  "homepage": "https://github.com/nelsenW/William_Nelsen#readme",
+  "description": ""
 }
