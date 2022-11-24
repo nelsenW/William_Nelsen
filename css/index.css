@@ -46,6 +46,7 @@
   .tile {
     cursor: pointer;
     position: relative;
+    overflow: hidden;
   }
   
   .tile:hover:before {

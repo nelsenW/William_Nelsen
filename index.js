@@ -16,12 +16,13 @@ const handleOnClick = index => {
   
   anime({
     targets: ".tile",
-    borderRadius: toggled ? '50%' : '50%',
+    
     scale: toggled ? [
         {value: 0, easing: 'easeOutSine', duration: 600}
     ]: [{
         value: 1, easing: 'easeInSine', duration: 1200}
     ],
+    borderRadius: toggled ? ['50%', '0%'] : ['0%', '50%'],
     delay: anime.stagger(50, {
       grid: [columns, rows],
       from: index
