@@ -1,29 +1,32 @@
 @keyframes background-pan {
-    from {
-      background-position: center 0%;
-    }
-    
-    to {
-      background-position: center -200% ;
-    }
+  0%{
+    background-position: 50% 0%;
+  }
+  50%{
+    background-position: 50% 100%;
+  }
+  100%{
+    background-position: 50% 0%;
+  }
   }
   
   body {
     animation: background-pan 10s linear infinite;
     background: linear-gradient(
-      to bottom,
       var(--c1),
       var(--c2),
       var(--c3),
       var(--c4),
+      var(--c5),
       var(--c5),
       var(--c4),
       var(--c3),
       var(--c2),
       var(--c1)
     );
-    background-size: 200%;
-    height: 200vh;
+    height: 100vh;
+    width: 100vw;
+    background-size: 400% 400%;
     overflow: hidden;
     margin: 0px;
   }
@@ -36,8 +39,8 @@
     z-index: 2;
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(45px, 1fr));
   }
   
   .tile {

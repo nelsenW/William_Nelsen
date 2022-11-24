@@ -16,8 +16,12 @@ const handleOnClick = index => {
   
   anime({
     targets: ".tile",
-    opacity: toggled ? 0 : 1,
-    delay: anime.stagger(50, {
+    scale: toggled ? [
+        {value: 0, easing: 'easeOutSine', duration: 1200}
+    ]: [{
+        value: 1, easing: 'easeInSine', duration: 1200}
+    ],
+    delay: anime.stagger(100, {
       grid: [columns, rows],
       from: index
     })
@@ -45,7 +49,7 @@ const createTiles = quantity => {
 const createGrid = () => {
   wrapper.innerHTML = "";
   
-  const size = document.body.clientWidth > 800 ? 60 : 30;
+  const size = document.body.clientWidth > 800 ? 45 : 45;
   
   columns = Math.floor(document.body.clientWidth / size);
   rows = Math.floor(document.body.clientHeight / size);
