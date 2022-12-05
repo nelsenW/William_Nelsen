@@ -45,6 +45,7 @@ const createTiles = (quantity, columns, rows) => {
   const profile = placementCalculator("profile", columns, rows);
   const contact = placementCalculator("contact", columns, rows);
   const projects = placementCalculator("projects", columns, rows);
+  const resume = placementCalculator('resume', columns, rows)
   Array.from(Array(quantity)).map((tile, index) => {
     let options;
     switch (index) {
@@ -72,13 +73,13 @@ const createTiles = (quantity, columns, rows) => {
       case projects - 1:
         options = "projects";
         break;
-      case profile:
-      case profile + columns:
-      case profile + columns + 1:
-      case profile + columns - 1:
-      case profile + 1:
-      case profile - 1:
-        options = "profile";
+      case resume:
+      case resume + columns:
+      case resume + columns + 1:
+      case resume + columns - 1:
+      case resume + 1:
+      case resume - 1:
+        options = "resume";
         break;
     }
     wrapper.appendChild(createTile(index, options));
@@ -102,6 +103,10 @@ const placementCalculator = (option) => {
       return 4 + columns * 2;
     case "contact":
       return 6 + columns * 15;
+    case 'resume':
+      return 20 + columns * 4;
+    case "projects":
+      return 35 + columns * 8;
   }
 };
 

@@ -29,6 +29,7 @@
     background-size: 400% 400%;
     overflow: hidden;
     margin: 0px;
+    position: relative;
   }
 
 
@@ -58,4 +59,13 @@
     content: "";
     inset: 0.5px;
     position: absolute;
+  }
+
+  #name{
+    z-index: 3;
+    color: whitesmoke;
+    font-size: 100px;
+    position: absolute;
+    top: 55%;
+    left: 36%;
   }
